@@ -1,0 +1,282 @@
+/*Init*/
+nav, header, footer {
+    display: block;
+}
+
+body{
+    line-height: 1em;
+    margin: 0;
+}
+
+p{
+    line-height: 1.3;
+}
+
+nav{
+    width: 100%;
+    margin: 0;
+}
+
+nav ul{
+    background-color:rgb(3, 104, 199);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-table tr td img{
+    width: 4em;
+    height: 4em;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.33%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+.leftside-col{
+    margin-left: 10%;
+}
+
+.rightside-col{
+    margin-left: 5%;
+}
+
+.white{
+    color:whitesmoke;
+}
+
+input.inputbox{
+    font-size: 18px;
+    width: 75%;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.videocontainer iframe{
+    position: relative;
+    width: 80%;
+    margin: 0;
+    overflow: hidden;
+}
+
+/*Navbar*/
+ul.topnav li{
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-right{
+
+    float: right;
+}
+
+ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    padding: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color:whitesmoke;
+}
+
+ul.topnav li a:hover{
+    color:rgb(175, 175, 175);
+    background-color: rgb(0, 93, 214);
+}
+ul.topnav li.dropdown-icon{
+    display:none;
+
+}
+/*Custom styles */
+#section-1-gradient{
+    background-image: linear-gradient(to bottom, rgb(0, 93, 214), rgb(0,150,214));
+}
+
+button{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    background-color: #0069ff;
+    border-radius: 7px;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.5);
+    padding: 15px 30px;
+    display: block;
+    text-align: center;
+}
+
+/*Next Section*/
+h1.headerSection{
+    text-align: center;
+    font-size: 45px;
+}
+
+div.box{
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+div.icon {
+    width: 100%;
+}
+
+div.icon img{
+    width: 25%;
+}
+
+div.box label{
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+
+button.buttonLearnMore{
+    display: block;
+    margin: auto;
+}
+
+/*Article section*/
+
+article p {
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px;
+}
+
+
+div.article-img img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+/*Footer*/
+footer{
+    background-color: #0069ff;
+    padding-left: 10%;
+}
+
+
+footer h3{
+    color: white;
+    
+}
+
+footer ul{
+    color: white;
+    list-style: none;
+    line-height: 1.5;
+    padding: 0;
+}
+
+footer li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+
+footer li a:hover{
+    color: greenyellow;
+}
+
+
+/*Mobile*/
+@media screen and (max-width:560px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+
+    ul.topnav li.dropdown-icon{
+        display: block;
+    }
+
+    ul.topnav.responsive li.dropdown-icon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul.topnav.responsive{
+        position: relative;
+    }
+
+    ul.topnav.responsive li{
+        display: inline;
+        float:none;
+    }
+
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+
+    .col-6, .col-4, .col-7, .col-5{
+        width: 100%;
+        margin: 15px;;
+    }
+
+    .mobileStack{
+        width: 50%;
+        display: block;
+    }
+
+    div.box{
+        display: block;
+        padding: 5px;
+    }
+
+
+    div.leftside-col, div.rightside-col{
+        margin: 15px;
+        text-align: center;
+    }
+
+    .videocontainer iframe{
+        width: 100%;
+    }
+
+    h1.headerSection{
+        font-size: xx-large;
+    }
+
+    article p{
+        font-size: 16px;
+    }
+}
